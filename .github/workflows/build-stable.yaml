@@ -48,5 +48,5 @@ jobs:
       with:
         push: true
         tags: |
-          informaticsmatters/discourse:${{ env.GITHUB_REF_SLUG }}
-          informaticsmatters/discourse:stable
+          informaticsmatters/discourse-30:${{ env.GITHUB_REF_SLUG }}
+          informaticsmatters/discourse-30:stable
