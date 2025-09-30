@@ -1,5 +1,5 @@
-FROM bitnami/discourse:2.6.7-debian-10-r2
+FROM informaticsmatters/discourse:2.6.7-base
 
-# Add some cusomisation (plugins)...
+# Add some customisation (plugins)...
 RUN cd /opt/bitnami/discourse/plugins && \
     git clone https://github.com/discourse/discourse-openid-connect

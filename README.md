@@ -24,6 +24,19 @@ to the info in the first link. The messages that are displayed in the login
 dialog can also be customised to be more specific to your OpenID Connect
 instance.
 
+## Loss of bitnami base image
+According to bitmani (2025): -
+
+>   The bitnami images no longer receive any further updates or support and should
+    only be used for temporary migration purposes. If you rely on any of these legacy
+    images, we suggest pulling and storing them in your own container registry to
+    ensure continued availability. Please note that this repository may be removed
+    in the future.
+
+To ensure we're able to build in the future we have pulled the latest
+`bitnamilegacy/discourse:2.6.7` image (which we were using) and pushed it to docker hub
+as `informaticsmatters/discourse:2.6.7-base`, which we now depend on.
+
 ---
 
 [discourse-openid-connect]: https://github.com/discourse/discourse-openid-connect
